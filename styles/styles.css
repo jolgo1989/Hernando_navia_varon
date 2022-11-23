@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background-color: #ededf0;
+  font-family: "Zilla Slab", serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header__toggle-menu {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  height: 40px;
+  z-index: 10;
+}
+
+.header__ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a8e890;
+  /*Posición por defecto del menu  */
+  transition: transform 0.3s;
+  transform: translateY(-100%);
+}
+
+/* Clase para que el menu se muestre desde js */
+.header__ul--show {
+  /*Indicamos que el menu se quede justo en la posición que esta ahora mismo  */
+  transform: translateY(0);
+}
+
+.header__li {
+  padding: 1rem;
+}
+.header__a {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Todo:Media queries */
+@media screen and (min-width: 768px) {
+  .header__ul {
+    flex-direction: row;
+    transform: translateY(0);
+  }
+
+  .header__toggle-menu {
+    display: none;
+  }
+}
