@@ -10,15 +10,23 @@
       href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/83af84bc01.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/styles/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <nav class="header__nav">
-        <div id="header__toggle-menu" class="header__toggle-menu">
-          <img src="/assets/imagenes/hamburger-icon.png" alt="" />
-        </div>
+      <a href="#">
+        <img
+          class="header__logo"
+          src="/assets/imagenes/logo.png"
+          alt="logo_HNV"
+        />
+      </a>
+      <nav class="header__nav header__icon--line ">
         <ul id="header__ul" class="header__ul">
           <li class="header__li">
             <a class="header__a" href="">Inicio</a>
@@ -33,10 +41,21 @@
           </li>
 
           <li class="header__li">
-            <a class="header__a" href="">Contactenos</a>
+            <a class="header__a " href="">Contactenos</a>
           </li>
         </ul>
       </nav>
+      <div id="header__toggle-menu" class="header__toggle-menu">
+        <img src="/assets/imagenes/hamburger-icon.png" alt="" />
+      </div>
+
+      <div class="header__icon-div   ">
+        <i class="fa-brands header__icon  fa-square-facebook"></i>
+        <i class="fa-brands header__icon  fa-square-instagram"></i>
+        <i class="fa-brands header__icon  fa-youtube"></i>
+        <i class="fa-brands header__icon  fa-linkedin"></i>
+        <i class="fa-brands header__icon  fa-tiktok"></i>
+      </div>
     </header>
 
     <main></main>

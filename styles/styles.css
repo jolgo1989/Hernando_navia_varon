@@ -2,10 +2,53 @@ body {
   margin: 0;
   background-color: #ededf0;
   font-family: "Zilla Slab", serif;
+  /*Metodo para eliminar la barra de scroll en el eje X  */
+  overflow: hidden;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+/*todo:Paleta de colores
+ 344D67
+6ECCAF
+ADE792
+F3ECB0 */
 
 img {
   max-width: 100%;
+}
+.header {
+  background-color: #a8e890;
+  /* padding: 0.025rem 7%; */
+}
+
+/*Metodo para crear la linea   */
+/* @media screen and (min-width: 768px) {
+  .nosotros__section--line {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+} */
+
+/* .header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+} */
+
+.header__logo {
+  width: 5rem;
+  padding: 0.5rem 7%;
+  /* padding-left: 7%; */
+  /* padding-top: 0.5rem; */
+  /* padding-left: 7%; */
+  /* margin-top:0.5rem ; */
 }
 
 .header__toggle-menu {
@@ -26,16 +69,19 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #a8e890;
+  /* background-color: #a8e890; */
+  background-color: #344d67;
   /*Posición por defecto del menu  */
   transition: transform 0.3s;
-  transform: translateY(-100%);
+  transform: translateX(100%);
+  position: absolute;
+  width: 100%;
 }
 
 /* Clase para que el menu se muestre desde js */
 .header__ul--show {
   /*Indicamos que el menu se quede justo en la posición que esta ahora mismo  */
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .header__li {
@@ -47,14 +93,51 @@ img {
   text-decoration: none;
 }
 
+.header__icon {
+  display: none;
+}
+
 /* Todo:Media queries */
 @media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    padding: 0.025rem 7%;
+  }
+
+  /* .header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+} */
+
   .header__ul {
     flex-direction: row;
-    transform: translateY(0);
+    transform: translateX(0);
+    background-color: transparent;
+    position: static;
   }
 
   .header__toggle-menu {
     display: none;
   }
+
+  .header__icon {
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 0.8rem;
+  }
+
+  .header__icon--line {
+    border-right: 3px solid rgba(0, 0, 0, 0.2);
+  }
 }
+
