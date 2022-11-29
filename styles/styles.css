@@ -53,13 +53,13 @@ img {
   padding-left: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   background-color: #344d67;
   transition: transform 0.3s;
   transform: translateX(100%);
   position: fixed;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 16rem;
   height: 100vh;
 }
 
@@ -76,19 +76,47 @@ img {
   color: #000;
   text-transform: capitalize;
   text-decoration: none;
-  font-size: 1.3rem;
+  /*!Probar con este tipo de letra desde el celuar para ver como se ve  */
+  /* font-size: 1.8rem; */
+  font-size: 1.2rem;
   margin: 0 0.5rem;
-  font-weight: 400;
+  font-weight: 500;
+  display: block;
+}
+
+/*?pseudo clase que se activa cuando tenemos precionado un elemento, generalmente utilizado en resoluciones para dispositivos moviles  */
+.header__a--efec:active {
+  color: #f3ecb0;
+  border-bottom: 0.1rem solid #f3ecb0;
+  padding-bottom: 0.5rem;
+  transition: 0.2s linear;
 }
 
 .header__icon {
   display: none;
+  cursor: pointer;
+}
+
+.header__icon--efect:hover {
+  color: #f3ecb0;
+  transition: 0.2s linear;
 }
 
 .header__icon--line {
   border-bottom: 3px solid #6eccaf;
 }
 /* Todo:Media queries */
+
+/*?Media querie que funciona solo si el dispositivo tiene un cursor  */
+@media (hover: hover) {
+  .header__a--efec:hover {
+    color: #f3ecb0;
+    border-bottom: 0.1rem solid #f3ecb0;
+    padding-bottom: 0.5rem;
+    transition: 0.2s linear;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header {
     display: flex;
@@ -97,11 +125,17 @@ img {
   }
   .header__ul {
     flex-direction: row;
+    align-items: center;
     transform: translateX(0);
     background-color: transparent;
     margin-top: 0;
     height: auto;
     position: static;
+    width: 100%;
+  }
+
+  .header__a {
+    display: inline;
   }
 
   .header__toggle-menu {
