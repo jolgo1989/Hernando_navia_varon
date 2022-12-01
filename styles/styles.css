@@ -69,7 +69,6 @@ img {
   transform: translateX(0);
 }
 
-
 .header__li {
   padding: 1rem;
 }
@@ -154,3 +153,9 @@ img {
   }
 }
 
+/*Todo prueba  */
+
+.inicio {
+  height: 100vh;
+  background-color: aqua;
+}
