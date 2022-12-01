@@ -69,6 +69,7 @@ img {
   transform: translateX(0);
 }
 
+
 .header__li {
   padding: 1rem;
 }
@@ -83,6 +84,10 @@ img {
   font-weight: 500;
   display: block;
 }
+
+/* .header__a--show {
+  transform: translateX(0);
+} */
 
 /*?pseudo clase que se activa cuando tenemos precionado un elemento, generalmente utilizado en resoluciones para dispositivos moviles  */
 .header__a--efec:active {
@@ -148,3 +153,4 @@ img {
     margin-left: 0.8rem;
   }
 }
+
