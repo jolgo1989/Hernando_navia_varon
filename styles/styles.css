@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   background-color: #ededf0;
@@ -18,17 +22,16 @@ F3ECB0 */
 img {
   max-width: 100%;
 }
-/* .header {
-  background-color: #a8e890;
-  overflow: hidden;
-} */
-
+/* header section starts  */
 .header {
   margin-top: 0;
   padding: 0.025rem 7%;
   background-color: #a8e890;
   /*Metodo para eliminar la barra de scroll en el eje X  */
   overflow: hidden;
+  /*!Averiguar porque al colocar stiky se desabilita el menu */
+  position: sticky;
+  top: 0;
 }
 
 .header__logo {
@@ -40,6 +43,7 @@ img {
   position: absolute;
   top: 0.5rem;
   right: 1.5rem;
+  /*Todo:Averiguar como usar filter:Inverert */
   /* filter: invert(1); */
   cursor: pointer;
   height: 40px;
@@ -57,6 +61,7 @@ img {
   background-color: #344d67;
   transition: transform 0.3s;
   transform: translateX(100%);
+  /*!Averiguar porque al colocar position:absolue quedan espacio en blanco */
   position: fixed;
   right: 0;
   width: 16rem;
@@ -84,10 +89,6 @@ img {
   display: block;
 }
 
-/* .header__a--show {
-  transform: translateX(0);
-} */
-
 /*?pseudo clase que se activa cuando tenemos precionado un elemento, generalmente utilizado en resoluciones para dispositivos moviles  */
 .header__a--efec:active {
   color: #f3ecb0;
@@ -108,6 +109,67 @@ img {
 
 .header__icon--line {
   border-bottom: 3px solid #6eccaf;
+}
+
+/* header section ends */
+
+/*Inicio start  */
+.inicio {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  scroll-margin-top: 7.5em;
+  /* display: flex;
+  align-items: center; */
+}
+.inicio--gradien {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/imagenes/books.webp);
+}
+
+.inicio__content {
+  /*Colocar esta resolución para pantallas grandes  */
+  max-width: 57rem;
+  padding-top: 3em;
+  padding-left: 7%;
+}
+
+.inicio__h2 {
+  font-size: calc(1.8rem + 3vw);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  padding-right: 0.5em;
+}
+
+.inicio__p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ffffff;
+  padding-right: 0.5em;
+}
+
+/*Inicio end  */
+
+.proyectos {
+  height: 100vh;
+  background-color: peru;
+}
+
+.nosotros {
+  height: 100vh;
+  background-color: crimson;
+}
+
+.contactenos {
+  height: 100vh;
+  background-color: darkolivegreen;
 }
 /* Todo:Media queries */
 
@@ -151,11 +213,4 @@ img {
     font-size: 2rem;
     margin-left: 0.8rem;
   }
-}
-
-/*Todo prueba  */
-
-.inicio {
-  height: 100vh;
-  background-color: aqua;
 }
