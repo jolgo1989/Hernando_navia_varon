@@ -44,11 +44,10 @@ img {
   position: absolute;
   top: 0.5rem;
   right: 1.5rem;
-  /*Todo:Averiguar como usar filter:Inverert */
-  /* filter: invert(1); */
   cursor: pointer;
-  height: 40px;
+  font-size: 40px;
   z-index: 10;
+  color: var(--white);
 }
 
 .header__ul {
