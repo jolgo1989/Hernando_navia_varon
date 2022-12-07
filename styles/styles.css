@@ -198,20 +198,22 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .header {
+  .header__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .header__ul {
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     transform: translateX(0);
     background-color: transparent;
     margin-top: 0;
     height: auto;
     position: static;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .header__a {
