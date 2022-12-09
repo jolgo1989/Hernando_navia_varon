@@ -237,12 +237,17 @@ img {
   }
 
   .header__icon {
-    display: inline-block;
     font-size: 2rem;
     margin-left: 0.8rem;
   }
 
   .header__icon--line {
     border-bottom: 1px solid var(--pink);
+  }
+}
+
+@media screen and (min-width: 910px) {
+  .header__icon {
+    display: inline-block;
   }
 }
