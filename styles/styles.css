@@ -11,9 +11,17 @@ html {
   --gree: #1f6650;
   --blue: #6f9a8d;
   --pink: #ea5e5e;
-  --max-width: 1400px;
+  --size-1400: 1400px;
   --margin: auto;
+  --size-XL: clamp(2.2rem, calc(-0.12rem + 5.48vw), 4.13rem);
 }
+
+/* Talla XS 
+Talla S
+Talla M 
+Talla L 
+Talla XL
+Talla XXL  */
 
 body {
   margin: 0;
@@ -40,6 +48,8 @@ img {
 .header__logo {
   /*Se aplica el tamaño en height para que mantenga el mismo tamaño  */
   height: 7rem;
+  /*Todo: Metodo para ajustar la imagen en sus proporciones normales
+   object-fit: cover; */
 }
 
 .header__toggle-menu {
@@ -119,7 +129,7 @@ img {
 /*Main section starts  */
 
 .main {
-  max-width: var(--max-width);
+  max-width: var(--size-1400);
   margin-left: auto;
   margin-right: auto;
 }
@@ -147,10 +157,11 @@ img {
   max-width: 57rem;
   padding-top: 12em;
   padding-left: 7%;
+  background-color: darkred;
 }
 
 .inicio__h2 {
-  font-size: calc(1.8rem + 3vw);
+  font-size: var(--size-XL);
   text-transform: uppercase;
   font-weight: 700;
   color: var(--white);
@@ -198,7 +209,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .header__nav {
-    max-width: 1400px;
+    max-width: var(--size-1400);
     display: flex;
     align-items: center;
     justify-content: space-between;
