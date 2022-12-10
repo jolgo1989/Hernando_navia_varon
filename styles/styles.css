@@ -12,15 +12,16 @@ html {
   --blue: #6f9a8d;
   --pink: #ea5e5e;
   --size-1400: 1400px;
-  --Textsize-XL: clamp(2.2rem, calc(-0.12rem + 5.48vw), 4.13rem);
-  --Textsize-M: clamp(1.2rem, calc(1.01rem + 0.91vw), 1.72rem);
+  --textSize-XL: clamp(2.2rem, calc(-0.12rem + 5.48vw), 4.13rem);
+  --textSize-M: clamp(1.2rem, calc(1.01rem + 0.91vw), 1.72rem);
+  --padding-Content: 2%;
 }
 
 /* Talla XS 
-Talla S
-Talla M 
-Talla L 
-Talla XL
+TallatS
+TSlla M 
+Talla t 
+TSlla XL
 Talla XXL  */
 
 body {
@@ -34,7 +35,7 @@ img {
 }
 /* header section starts  */
 .header {
-  padding: 0.025rem 7%;
+  padding: 0.025rem var(--padding-Content);
   background-color: var(--gree);
   /*Metodo para eliminar la barra de scroll en el eje X  */
   overflow: hidden;
@@ -156,11 +157,11 @@ img {
   /*Colocar esta resolución para pantallas grandes  */
   max-width: 57rem;
   padding-top: 12em;
-  padding-left: 7%;
+  padding-left: var(--padding-Content);
 }
 
 .inicio__h2 {
-  font-size: var(--Textsize-XL);
+  font-size: var(--textSize-XL);
   text-transform: uppercase;
   font-weight: 700;
   color: var(--white);
@@ -169,7 +170,7 @@ img {
 }
 
 .inicio__p {
-  font-size: var(--Textsize-M);
+  font-size: var(--textSize-M);
   font-weight: 500;
   line-height: 1.2;
   color: var(--white);
@@ -237,6 +238,7 @@ img {
   }
 
   .header__icon {
+    display: inline-block;
     font-size: 2rem;
     margin-left: 0.8rem;
   }
@@ -247,7 +249,7 @@ img {
 }
 
 @media screen and (min-width: 910px) {
-  .header__icon {
-    display: inline-block;
+  :root {
+    --padding-Content: 7%;
   }
 }
