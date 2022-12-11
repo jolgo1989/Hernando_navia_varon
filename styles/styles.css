@@ -48,7 +48,7 @@ img {
 
 .header__logo {
   /*Se aplica el tamaño en height para que mantenga el mismo tamaño  */
-  height: 7rem;
+  height: 6rem;
   /*Todo: Metodo para ajustar la imagen en sus proporciones normales
    object-fit: cover; */
 }
@@ -56,20 +56,22 @@ img {
 .header__icon-div {
   position: absolute;
   top: 0.5rem;
-  right: 1.5rem;
+  right: 1rem;
   font-size: 2rem;
-  cursor: pointer;
   z-index: 10;
   color: var(--white);
+  height: 50px;
 }
 /* font-size: 2rem;
     margin-left: 0.8rem; */
 
 .header__icon {
-  margin-right: 0.5rem;
-  /* color: var(--white);
-  display: none;
-  cursor: pointer; */
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.header__toggle-menu {
+  cursor: pointer;
 }
 
 .header__ul {
@@ -119,12 +121,7 @@ img {
   transition: 0.2s linear;
 }
 
-.header__icon--efect:hover {
-  color: var(--blue);
-  transition: 0.2s linear;
-}
-
-.header__icon--line {
+.header--line {
   border-bottom: 3px solid var(--pink);
 }
 
@@ -209,6 +206,10 @@ img {
     padding-bottom: 0.5rem;
     transition: 0.2s linear;
   }
+  .header__icon--efect:hover {
+    color: var(--blue);
+    transition: 0.2s linear;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -244,11 +245,11 @@ img {
     display: none;
   }
 
-  .header__icon {
+  /* .header__icon {
     display: inline-block;
-  }
+  } */
 
-  .header__icon--line {
+  .header--line {
     border-bottom: 1px solid var(--pink);
   }
 }
