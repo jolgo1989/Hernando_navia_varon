@@ -14,7 +14,7 @@ html {
   --size-1400: 1400px;
   --textSize-XL: clamp(2.2rem, calc(-0.12rem + 5.48vw), 4.13rem);
   --textSize-M: clamp(1.2rem, calc(1.01rem + 0.91vw), 1.72rem);
-  --padding-Content: 2%;
+  --padding-Content: 4%;
 }
 
 /* Talla XS 
@@ -53,14 +53,23 @@ img {
    object-fit: cover; */
 }
 
-.header__toggle-menu {
+.header__icon-div {
   position: absolute;
   top: 0.5rem;
   right: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
-  font-size: 40px;
   z-index: 10;
   color: var(--white);
+}
+/* font-size: 2rem;
+    margin-left: 0.8rem; */
+
+.header__icon {
+  margin-right: 0.5rem;
+  /* color: var(--white);
+  display: none;
+  cursor: pointer; */
 }
 
 .header__ul {
@@ -108,12 +117,6 @@ img {
   border-bottom: 0.1rem solid var(--pink);
   padding-bottom: 0.5rem;
   transition: 0.2s linear;
-}
-
-.header__icon {
-  color: var(--white);
-  display: none;
-  cursor: pointer;
 }
 
 .header__icon--efect:hover {
@@ -229,6 +232,10 @@ img {
     position: static;
   }
 
+  .header__icon-div {
+    position: static;
+  }
+
   .header__a {
     display: inline;
   }
@@ -239,8 +246,6 @@ img {
 
   .header__icon {
     display: inline-block;
-    font-size: 2rem;
-    margin-left: 0.8rem;
   }
 
   .header__icon--line {
@@ -248,8 +253,8 @@ img {
   }
 }
 
-@media screen and (min-width: 910px) {
+/* @media screen and (min-width: 910px) {
   :root {
     --padding-Content: 7%;
   }
-}
+} */
