@@ -18,6 +18,7 @@ html {
   --textSize-S: clamp(1.2rem, calc(1.01rem + 0.91vw), 1.55rem);
   --textSize-M: clamp(1.04rem, calc(0.7rem + 1.68vw), 1.5rem);
   --textSize-XS: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --line: 0.1rem solid;
 }
 
 /* Talla XS =p
@@ -75,7 +76,7 @@ img {
 
 .header__ul {
   list-style: none;
-  margin-top: 0.2em;
+  margin-top: 0.1em;
   margin-bottom: 0;
   padding-left: 0;
   display: flex;
@@ -115,18 +116,18 @@ img {
 /*?pseudo clase que se activa cuando tenemos precionado un elemento, generalmente utilizado en resoluciones para dispositivos moviles  */
 .header__a--efec:active {
   color: var(--white);
-  border-bottom: 0.1rem solid var(--pink);
+  border-bottom: var(--line) var(--pink);
   padding-bottom: 0.5rem;
   transition: 0.2s linear;
 }
 
 .header--line {
-  border-bottom: 3px solid var(--pink);
+  border-bottom: var(--line) var(--pink);
 }
 
 /* header section ends */
 
-/*Main section starts  */
+/*?Main section starts  */
 
 .main {
   max-width: var(--size-1400);
@@ -134,7 +135,7 @@ img {
   margin-right: auto;
 }
 
-/*Inicio start  */
+/**Inicio start  */
 .inicio {
   min-height: 100vh;
   background-size: cover;
@@ -175,28 +176,23 @@ img {
   margin: 0;
 }
 
-/*Inicio end  */
+/**Inicio end  */
 
-/* Nosotros section starts */
-.nosotros__section {
+/** Nosotros section starts */
+
+.nosotros__article {
   /* height: 100vh; */
-  background-color: crimson;
-  padding: 0 var(--padding-Content);
+  background-color: coral;
+  padding-left: var(--padding-Content);
+
 }
 .nosotros__h2 {
   margin: 0;
-  padding: 1em 0;
-  text-align: center;
+  padding: 1.5em 0 1em 0;
   font-size: var(--textSize-L);
   color: var(--white);
   text-transform: uppercase;
   font-weight: 700;
-}
-
-.nosotros__h3 {
-  color: var(--white);
-  font-weight: 500;
-  font-size: var(--textSize-M);
 }
 
 .nosotros__p {
@@ -205,9 +201,9 @@ img {
   font-size: var(--textSize-XS);
 }
 
-/* Nosotros section ends */
+/** Nosotros section ends */
 
-/*Main section ends */
+/*?Main section ends */
 
 .proyectos {
   height: 100vh;
@@ -224,7 +220,7 @@ img {
 @media (hover: hover) {
   .header__a--efec:hover {
     color: var(--blue);
-    border-bottom: 0.1rem solid var(--pink);
+    border-bottom: var(--line) var(--pink);
     padding-bottom: 0.5rem;
     transition: 0.2s linear;
   }
@@ -267,9 +263,9 @@ img {
     display: none;
   }
 
-  .header--line {
+  /* .header--line {
     border-bottom: 1px solid var(--pink);
-  }
+  } */
 
   .nosotros__content {
     display: flex;
