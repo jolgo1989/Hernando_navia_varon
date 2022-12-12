@@ -11,17 +11,20 @@ html {
   --gree: #1f6650;
   --blue: #6f9a8d;
   --pink: #ea5e5e;
-  --size-1400: 1400px;
-  --textSize-XL: clamp(2.2rem, calc(-0.12rem + 5.48vw), 4.13rem);
-  --textSize-M: clamp(1.2rem, calc(1.01rem + 0.91vw), 1.72rem);
   --padding-Content: 4%;
+  --size-1400: 1400px;
+  --textSize-X: clamp(2.2rem, calc(-0.12rem + 5.48vw), 4.13rem);
+  --textSize-L: clamp(1.39rem, calc(0.97rem + 2.05vw), 2.56rem);
+  --textSize-S: clamp(1.2rem, calc(1.01rem + 0.91vw), 1.55rem);
+  --textSize-M: clamp(1.04rem, calc(0.7rem + 1.68vw), 1.5rem);
+  --textSize-XS: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
 }
 
-/* Talla XS 
-TallatS
-TSlla M 
-Talla t 
-TSlla XL
+/* Talla XS =p
+TallatS= texto_inicio
+TSlla M = h3
+Talla L = h2
+TSlla X= h1
 Talla XXL  */
 
 body {
@@ -40,8 +43,6 @@ img {
   /*Metodo para eliminar la barra de scroll en el eje X  */
   overflow: hidden;
   /*!Averiguar porque al colocar stiky se desabilita el menu */
-  /* position: sticky;
-  top: 0; */
   position: fixed;
   width: 100%;
 }
@@ -62,8 +63,6 @@ img {
   color: var(--white);
   height: 50px;
 }
-/* font-size: 2rem;
-    margin-left: 0.8rem; */
 
 .header__icon {
   margin-right: 1rem;
@@ -141,8 +140,6 @@ img {
   background-size: cover;
   background-position: center;
   scroll-margin-top: 7.5em;
-  /* display: flex;
-  align-items: center; */
 }
 .inicio--gradien {
   background-image: linear-gradient(
@@ -160,8 +157,8 @@ img {
   padding-left: var(--padding-Content);
 }
 
-.inicio__h2 {
-  font-size: var(--textSize-XL);
+.inicio__h1 {
+  font-size: var(--textSize-X);
   text-transform: uppercase;
   font-weight: 700;
   color: var(--white);
@@ -170,7 +167,7 @@ img {
 }
 
 .inicio__p {
-  font-size: var(--textSize-M);
+  font-size: var(--textSize-S);
   font-weight: 500;
   line-height: 1.2;
   color: var(--white);
@@ -180,16 +177,41 @@ img {
 
 /*Inicio end  */
 
-/* header section ends */
+/* Nosotros section starts */
+.nosotros__section {
+  /* height: 100vh; */
+  background-color: crimson;
+  padding: 0 var(--padding-Content);
+}
+.nosotros__h2 {
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  font-size: var(--textSize-L);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nosotros__h3 {
+  color: var(--white);
+  font-weight: 500;
+  font-size: var(--textSize-M);
+}
+
+.nosotros__p {
+  margin: 0;
+  color: var(--white);
+  font-size: var(--textSize-XS);
+}
+
+/* Nosotros section ends */
+
+/*Main section ends */
 
 .proyectos {
   height: 100vh;
   background-color: peru;
-}
-
-.nosotros {
-  height: 100vh;
-  background-color: crimson;
 }
 
 .contactenos {
@@ -245,17 +267,11 @@ img {
     display: none;
   }
 
-  /* .header__icon {
-    display: inline-block;
-  } */
-
   .header--line {
     border-bottom: 1px solid var(--pink);
   }
-}
 
-/* @media screen and (min-width: 910px) {
-  :root {
-    --padding-Content: 7%;
+  .nosotros__content {
+    display: flex;
   }
-} */
+}
