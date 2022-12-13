@@ -34,6 +34,7 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
+/*Metodo para que las imagenes no se desborden  */
 img {
   max-width: 100%;
 }
@@ -179,13 +180,12 @@ img {
 /**Inicio end  */
 
 /** Nosotros section starts */
-
-.nosotros__article {
-  /* height: 100vh; */
-  background-color: coral;
-  padding-left: var(--padding-Content);
-
+.nosotros__section {
+  background-color: darkred;
+  padding: 0 var(--padding-Content);
+  scroll-margin-top: 4.5em;
 }
+
 .nosotros__h2 {
   margin: 0;
   padding: 1.5em 0 1em 0;
@@ -199,6 +199,10 @@ img {
   margin: 0;
   color: var(--white);
   font-size: var(--textSize-XS);
+}
+
+.nosotros--padding {
+  padding: 1.5em 0;
 }
 
 /** Nosotros section ends */
@@ -263,11 +267,8 @@ img {
     display: none;
   }
 
-  /* .header--line {
-    border-bottom: 1px solid var(--pink);
-  } */
-
-  .nosotros__content {
+  .nosotros__section {
     display: flex;
+    gap: 30px;
   }
 }
