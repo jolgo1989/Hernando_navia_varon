@@ -208,7 +208,7 @@ img {
 }
 
 .section__content {
-  margin: 2rem 1rem;
+  margin: 1rem 1rem;
 }
 
 .section__text {
@@ -218,7 +218,7 @@ img {
 }
 
 .section--padding {
-  padding: 1.5em 0;
+  padding: 0.5em 0;
 }
 
 .section--grid {
@@ -236,10 +236,11 @@ img {
   padding: 1em;
   cursor: pointer;
   border-radius: 8px;
+  border-style: none;
 }
 
 .section__button-img {
-  padding: 0 0.5em 0 0;
+  padding-right: 0.5em;
 }
 
 /** section section ends */
@@ -259,6 +260,12 @@ img {
   .header__icon--efect:hover {
     color: var(--blue);
     transition: 0.2s linear;
+  }
+
+  .section__button--efect:hover {
+    background-color: var(--blue);
+
+    transition: background-color 0.2s;
   }
 }
 
