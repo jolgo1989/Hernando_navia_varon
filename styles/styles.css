@@ -22,7 +22,7 @@ html {
 }
 
 /* Talla XS =p
-TallatS= texto_inicio
+TallatS= texto_home
 TSlla M = h3
 Talla L = h2
 TSlla X= h1
@@ -136,30 +136,30 @@ img {
   margin-right: auto;
 }
 
-/**Inicio start  */
-.inicio {
+/**home start  */
+.home {
   min-height: 100vh;
-  background-size: cover;
-  background-position: center;
   scroll-margin-top: 7.5em;
 }
-.inicio--gradien {
+.home--gradien {
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
     url(/assets/imagenes/books.webp);
+  background-size: cover;
+  background-position: center;
 }
 
-.inicio__content {
+.home__content {
   /*Colocar esta resolución para pantallas grandes  */
   max-width: 57rem;
   padding-top: 12em;
   padding-left: var(--padding-Content);
 }
 
-.inicio__h1 {
+.home__title {
   font-size: var(--textSize-X);
   text-transform: uppercase;
   font-weight: 700;
@@ -168,7 +168,7 @@ img {
   padding-right: 0.5em;
 }
 
-.inicio__p {
+.home__text {
   font-size: var(--textSize-S);
   font-weight: 500;
   line-height: 1.2;
@@ -177,47 +177,60 @@ img {
   margin: 0;
 }
 
-/**Inicio end  */
+/**home end  */
 
-/** Nosotros section starts */
-.nosotros__section {
+/** section section starts */
+.section {
   background-color: darkred;
   padding: 0 var(--padding-Content);
   scroll-margin-top: 4.5em;
 }
 
-.nosotros__h2 {
+.section--color {
+  background-color: darkolivegreen;
+}
+
+.section__title {
   margin: 0;
-  padding: 1.5em 0 1em 0;
-  font-size: var(--textSize-L);
   color: var(--white);
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.nosotros__p {
+.section__title--big {
+  font-size: var(--textSize-L);
+  padding: 1.5em 0 1em 0;
+}
+
+.section__content {
+  margin: 1rem 1rem;
+}
+
+.section__text {
   margin: 0;
   color: var(--white);
   font-size: var(--textSize-XS);
 }
 
-.nosotros--padding {
+.section--padding {
   padding: 1.5em 0;
 }
 
-/** Nosotros section ends */
+.section--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 16px;
+  padding-top: 6em;
+}
+
+.section__article--border {
+  border: var(--pink) var(--line);
+}
+
+/** section section ends */
 
 /*?Main section ends */
 
-.proyectos {
-  height: 100vh;
-  background-color: peru;
-}
-
-.contactenos {
-  height: 100vh;
-  background-color: darkolivegreen;
-}
 /* Todo:Media queries */
 
 /*?Media querie que funciona solo si el dispositivo tiene un cursor  */
@@ -267,7 +280,7 @@ img {
     display: none;
   }
 
-  .nosotros__section {
+  .section--flex {
     display: flex;
     gap: 30px;
   }
