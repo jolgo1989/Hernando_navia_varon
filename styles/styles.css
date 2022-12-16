@@ -181,15 +181,18 @@ img {
 
 /** section section starts */
 .section {
+  /* !quitar color rojo*/
   background-color: darkred;
-  padding: 5.5em var(--padding-Content) 1.5em;
-  scroll-margin-top: 4.5em;
+  padding: 4.5em var(--padding-Content) 1.5em;
+  scroll-margin-top: 4em;
 }
 
+/*!Quitar esto  */
 .section--color {
   background-color: darkolivegreen;
 }
 
+/*?OK  */
 .section__title {
   margin: 0;
   color: var(--white);
@@ -198,17 +201,14 @@ img {
   padding-bottom: 0.5em;
 }
 
-.section__title--break {
-  word-break: break-all;
-}
-
 .section__title--big {
   font-size: var(--textSize-L);
   /* padding: 1.5em 0 1em 0; */
 }
 
-.section__content {
-  margin: 1rem 1rem;
+/*?OK  */
+.section__title--break {
+  word-break: break-all;
 }
 
 .section__text {
@@ -216,15 +216,54 @@ img {
   color: var(--white);
   font-size: var(--textSize-XS);
 }
-
-.section--padding {
-  padding: 0.5em 0;
+.section__img {
+  margin: 0.5rem 0;
 }
 
 .section--grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  gap: 16px;
+  gap: 10px;
+}
+
+.section__card {
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.section__card--teatro {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/imagenes/pexels-cottonbro-studio-6899772.jpg);
+}
+
+.section__card--deporte {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/imagenes/basquetbol.jpg);
+}
+.section__card--emprendimiento {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/imagenes/emprendimiento.jpg);
+}
+.section__card--lectura {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/imagenes/lectura.jpg);
 }
 
 .section__article--border {
@@ -244,6 +283,10 @@ img {
 }
 
 /** section section ends */
+
+.contactenos {
+  height: 100vh;
+}
 
 /*?Main section ends */
 
@@ -306,4 +349,8 @@ img {
     display: flex;
     gap: 30px;
   }
+
+  /*Todo:OJO con esto .section__article--size {
+    max-width: 19rem;
+  } */
 }
