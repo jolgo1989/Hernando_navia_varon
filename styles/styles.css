@@ -37,6 +37,7 @@ body {
 /*Metodo para que las imagenes no se desborden  */
 img {
   max-width: 100%;
+  display: block;
 }
 /* header section starts  */
 .header {
@@ -227,50 +228,32 @@ img {
 }
 
 .section__card {
-  height: 25rem;
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.section__card--teatro {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(/assets/imagenes/pexels-cottonbro-studio-6899772.jpg);
+.section-image-data {
+  position: absolute;
+  bottom: 0%;
+  z-index: 1;
+  padding: 1rem;
 }
 
-.section__card--deporte {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(/assets/imagenes/basquetbol.jpg);
-}
-.section__card--emprendimiento {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(/assets/imagenes/emprendimiento.jpg);
-}
-.section__card--lectura {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(/assets/imagenes/lectura.jpg);
+.section__card:hover .section__title--card,
+.section__card:hover .section__button {
+  transform: translateY(0%);
+  transition: transform 0.3s 0.2s;
 }
 
-.section__article--border {
-  border: var(--pink) var(--line);
+.section__title--card {
+  text-align: center;
+  transform: translateY(300%);
+  transition: transform 0.4s 0.2s;
 }
 
 .section__button {
+  transform: translateY(200%);
+  transition: transform 0.3s 0.2s;
   margin-top: 1.5em;
   padding: 1em;
   cursor: pointer;
@@ -280,6 +263,19 @@ img {
 
 .section__button-img {
   padding-right: 0.5em;
+}
+.section__card:hover .section__text--card {
+  transform: translateX(0%);
+  transition: transform 0.3s 0.2s;
+}
+
+.section__text--card {
+  transform: translateX(120%);
+  transition: transform 0.3s 0.2s;
+}
+
+.section__article--border {
+  border: var(--pink) var(--line);
 }
 
 /** section section ends */
