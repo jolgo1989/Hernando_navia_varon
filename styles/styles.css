@@ -16,7 +16,7 @@ html {
   --textSize-X: clamp(2.2rem, calc(-0.12rem + 5.48vw), 4.13rem);
   --textSize-L: clamp(1.39rem, calc(0.97rem + 2.05vw), 2.56rem);
   --textSize-S: clamp(1.2rem, calc(1.01rem + 0.91vw), 1.55rem);
-  --textSize-M: clamp(1.04rem, calc(0.7rem + 1.68vw), 1.5rem);
+  --textSize-M: clamp(1rem, calc(0.84rem + 0.77vw), 1.44rem);
   --textSize-XS: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
   --line: 0.1rem solid;
 }
@@ -48,6 +48,7 @@ img {
   /*!Averiguar porque al colocar stiky se desabilita el menu */
   position: fixed;
   width: 100%;
+  z-index: 15;
 }
 
 .header__logo {
@@ -193,7 +194,6 @@ img {
   background-color: darkolivegreen;
 }
 
-/*?OK  */
 .section__title {
   margin: 0;
   color: var(--white);
@@ -207,7 +207,6 @@ img {
   /* padding: 1.5em 0 1em 0; */
 }
 
-/*?OK  */
 .section__title--break {
   word-break: break-all;
 }
@@ -230,6 +229,7 @@ img {
 .section__card {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .section-image-data {
@@ -246,6 +246,7 @@ img {
 }
 
 .section__title--card {
+  font-size: var(--textSize-M);
   text-align: center;
   transform: translateY(300%);
   transition: transform 0.4s 0.2s;
