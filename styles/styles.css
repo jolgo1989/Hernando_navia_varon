@@ -227,9 +227,48 @@ img {
 }
 
 .section__card {
+  height: 25rem;
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+.section__card--teatro {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/imagenes/teatro.webp);
+}
+
+.section__card--deporte {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/imagenes/basquetbol.webp);
+}
+
+.section__card--emprendimiento {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/imagenes/emprendimiento.webp);
+}
+
+.section__card--lectoescritura {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/imagenes/lectura.webp);
 }
 
 .section-image-data {
