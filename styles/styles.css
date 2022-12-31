@@ -278,22 +278,12 @@ img {
   padding: 1rem;
 }
 
-.section__card:hover .section__title--card,
-.section__card:hover .section__button {
-  transform: translateY(0%);
-  transition: transform 0.3s 0.2s;
-}
-
 .section__title--card {
   font-size: var(--textSize-M);
   text-align: center;
-  transform: translateY(300%);
-  transition: transform 0.4s 0.2s;
 }
 
 .section__button {
-  transform: translateY(200%);
-  transition: transform 0.3s 0.2s;
   margin-top: 1.5em;
   padding: 1em;
   cursor: pointer;
@@ -303,15 +293,6 @@ img {
 
 .section__button-img {
   padding-right: 0.5em;
-}
-.section__card:hover .section__text--card {
-  transform: translateX(0%);
-  transition: transform 0.3s 0.2s;
-}
-
-.section__text--card {
-  transform: translateX(120%);
-  transition: transform 0.3s 0.2s;
 }
 
 .section__article--border {
@@ -346,6 +327,32 @@ img {
 
     transition: background-color 0.2s;
   }
+
+  .section__card:hover .section__title--card,
+  .section__card:hover .section__button {
+    transform: translateY(0%);
+    transition: transform 0.3s 0.2s;
+  }
+
+  .section__title--card {
+    transform: translateY(300%);
+    transition: transform 0.4s 0.2s;
+  }
+
+  .section__button {
+    transform: translateY(200%);
+    transition: transform 0.3s 0.2s;
+  }
+
+  .section__card:hover .section__text--card {
+  transform: translateX(0%);
+  transition: transform 0.3s 0.2s;
+}
+
+.section__text--card {
+  transform: translateX(120%);
+  transition: transform 0.3s 0.2s;
+}
 }
 
 @media screen and (min-width: 768px) {
