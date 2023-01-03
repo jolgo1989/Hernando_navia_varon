@@ -301,11 +301,42 @@ img {
 
 /** section section ends */
 
-.contactenos {
-  height: 100vh;
+/*?Main section ends */
+
+/*? Contacto section starts */
+.input__color {
+  background-color: darkgoldenrod;
+}
+.section__inputBox {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: black var(--line);
+  margin-bottom: 2rem;
 }
 
-/*?Main section ends */
+.section__inputBox-icon {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.section__input {
+  width: 100%;
+  padding: 1em;
+  font-size: var(--textSize-S);
+  text-transform: none;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+/*? Contacto section ends */
 
 /* Todo:Media queries */
 
@@ -345,14 +376,14 @@ img {
   }
 
   .section__card:hover .section__text--card {
-  transform: translateX(0%);
-  transition: transform 0.3s 0.2s;
-}
+    transform: translateX(0%);
+    transition: transform 0.3s 0.2s;
+  }
 
-.section__text--card {
-  transform: translateX(120%);
-  transition: transform 0.3s 0.2s;
-}
+  .section__text--card {
+    transform: translateX(120%);
+    transition: transform 0.3s 0.2s;
+  }
 }
 
 @media screen and (min-width: 768px) {
