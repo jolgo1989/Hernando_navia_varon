@@ -306,17 +306,21 @@ img {
 /*? Contacto section starts */
 
 .section__map {
+  flex: 1 1 20rem;
   width: 100%;
+  object-fit: cover;
 }
 
 .section--contacto {
   display: flex;
   flex-direction: column;
+  scroll-margin-top: 4em;
   background-color: darkgoldenrod;
 }
 
 .section__container-form {
   padding: 0 2em;
+   flex: 1 1 20rem;
 }
 .section__inputBox {
   display: flex;
@@ -333,19 +337,26 @@ img {
 }
 
 .section__input {
-  /* width: 100%; */
+  width: 100%;
   padding: 0.5em;
-  font-size: var(--textSize-S);
+  font-size: var(--textSize-M);
   outline: none;
   background-color: transparent;
   border: none;
   color: white;
 }
 
+.section__input--size {
+  width: 100%;
+}
+
 ::placeholder {
   color: white;
 }
 
+.footer {
+  height: 500px;
+}
 /*? Contacto section ends */
 
 /* Todo:Media queries */
