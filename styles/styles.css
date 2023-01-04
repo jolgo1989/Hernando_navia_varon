@@ -304,8 +304,19 @@ img {
 /*?Main section ends */
 
 /*? Contacto section starts */
-.input__color {
+
+.section__map {
+  width: 100%;
+}
+
+.section--contacto {
+  display: flex;
+  flex-direction: column;
   background-color: darkgoldenrod;
+}
+
+.section__container-form {
+  padding: 0 2em;
 }
 .section__inputBox {
   display: flex;
@@ -313,19 +324,18 @@ img {
   margin-top: 2rem;
   margin-bottom: 2rem;
   border: black var(--line);
-  margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .section__inputBox-icon {
-  font-size: 2rem;
+  font-size: 2em;
   margin-left: 1rem;
 }
 
 .section__input {
-  width: 100%;
-  padding: 1em;
+  /* width: 100%; */
+  padding: 0.5em;
   font-size: var(--textSize-S);
-  text-transform: none;
   outline: none;
   background-color: transparent;
   border: none;
@@ -422,6 +432,10 @@ img {
   .section--flex {
     display: flex;
     gap: 30px;
+  }
+
+  .section--contacto {
+    flex-direction: row;
   }
 
   /*Todo:OJO con esto .section__article--size {
