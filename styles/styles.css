@@ -320,7 +320,7 @@ img {
 
 .section__container-form {
   padding: 0 2em;
-   flex: 1 1 20rem;
+  flex: 1 1 20rem;
 }
 .section__inputBox {
   display: flex;
@@ -355,8 +355,17 @@ img {
 }
 
 .footer {
-  height: 500px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 4em;
+  padding-bottom: 2em;
 }
+
+.footer__adress {
+  margin: 2em 0;
+}
+
 /*? Contacto section ends */
 
 /* Todo:Media queries */
