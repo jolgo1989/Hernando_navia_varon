@@ -392,6 +392,12 @@ img {
     padding-bottom: 0.5rem;
     transition: 0.2s linear;
   }
+  .header__a--efec.active {
+    color: var(--blue);
+    border-bottom: var(--line) var(--pink);
+    padding-bottom: 0.5rem;
+    transition: 0.2s linear;
+  }
   .header__icon--efect:hover {
     color: var(--blue);
     transition: 0.2s linear;

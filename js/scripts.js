@@ -25,3 +25,17 @@ window.onscroll = () =>{
     mainMenuElement.classList.remove('header__ul--show');
 }
 
+
+//Todo: Metodo para activar los link al hacer click (Nota:tener encuenta que el archivo CSS se debe agregar la clase active)
+const links = document.querySelectorAll('.header__a');
+
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener('click', (e) => {
+    // Remover la clase "active" de todos los enlaces
+    for (let j = 0; j < links.length; j++) {
+      links[j].classList.remove('active');
+    }
+    // Agregar la clase "active" al enlace seleccionado
+    e.target.classList.add('active');
+  });
+}
