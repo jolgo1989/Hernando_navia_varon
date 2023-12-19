@@ -149,7 +149,7 @@ img {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../assets/imagenes/books.webp);
+    url(/assets/imagenes/books.webp);
   background-size: cover;
   background-position: center;
 }
@@ -241,7 +241,7 @@ img {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../assets/imagenes/teatro.webp);
+    url(/assets/imagenes/teatro.webp);
 }
 
 .section__card--deporte {
@@ -250,7 +250,7 @@ img {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(./assets/imagenes/basquetbol.webp);
+    url(/assets/imagenes/basquetbol.webp);
 }
 
 .section__card--emprendimiento {
@@ -259,7 +259,7 @@ img {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(./assets/imagenes/emprendimiento.webp);
+    url(/assets/imagenes/emprendimiento.webp);
 }
 
 .section__card--lectoescritura {
@@ -268,7 +268,7 @@ img {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(./assets/imagenes/lectura.webp);
+    url(/assets/imagenes/lectura.webp);
 }
 
 .section-image-data {
