@@ -149,7 +149,7 @@ img {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(/assets/imagenes/books.webp);
+    url(../assets/imagenes/books.webp);
   background-size: cover;
   background-position: center;
 }
