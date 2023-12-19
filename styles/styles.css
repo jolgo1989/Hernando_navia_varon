@@ -241,7 +241,7 @@ img {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(./assets/imagenes/teatro.webp);
+    url(../assets/imagenes/teatro.webp);
 }
 
 .section__card--deporte {
